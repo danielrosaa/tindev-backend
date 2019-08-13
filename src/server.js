@@ -30,4 +30,4 @@ app.use(cors()) // para poder ser usada pelo ReactJS
 app.use(express.json())
 app.use(routes)
 
-server.listen(3333)
+server.listen(process.env.PORT || 3333 )
